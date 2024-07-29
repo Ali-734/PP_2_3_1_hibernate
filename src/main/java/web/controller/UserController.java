@@ -1,7 +1,7 @@
 package web.controller;
 
 import web.model.User;
-import web.service.UserServiceInt;
+import web.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
 	@Autowired
-	private UserServiceInt userService;
+	private UserService userService;
 
 	@GetMapping
 	public String listUsers(Model model) {
