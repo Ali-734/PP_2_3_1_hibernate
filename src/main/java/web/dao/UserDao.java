@@ -3,7 +3,7 @@ package web.dao;
 import web.model.User;
 import java.util.List;
 
-public interface UserRepository {
+public interface UserDao {
     List<User> findAll();
     User findById(Long id);
     void save(User user);

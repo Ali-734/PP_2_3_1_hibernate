@@ -1,6 +1,6 @@
 package web.service;
 
-import web.dao.UserRepository;
+import web.dao.UserDao;
 import web.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserDao userRepository;
 
     @Override
     public List<User> getAllUsers() {
