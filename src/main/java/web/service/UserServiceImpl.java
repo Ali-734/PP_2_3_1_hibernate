@@ -1,7 +1,7 @@
 package web.service;
 
 import web.model.User;
-import web.dao.UserRepository;
+import web.dao.UserRepositoryInt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.List;
 public class UserServiceImpl implements UserServiceInt {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserRepositoryInt userRepository;
 
     @Override
     public List<User> getAllUsers() {
